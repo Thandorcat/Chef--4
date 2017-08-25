@@ -6,6 +6,8 @@
 
 package "net-tools"
 
+include_recipe 'chef_nginx'
+
 lb "apache_server" do
   role "apache_server"
   action :attach
